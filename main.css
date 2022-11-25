@@ -1,0 +1,227 @@
+:root {
+  --mygreen: #23c483;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.home-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+    url("../assets/bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header {
+  height: 80px;
+  padding: 0px 5rem 0px 5rem;
+}
+.header-div {
+  display: flex;
+  height: 100%;
+  gap: 5rem;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+}
+.logo {
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: var(--mygreen);
+}
+.menu-navbar {
+  display: flex;
+  text-decoration: none;
+  gap: 3rem;
+  list-style: none;
+}
+.menu-navbar li a {
+  text-decoration: none;
+  transition: all ease-in-out 250ms;
+}
+.menu-navbar li a:hover {
+  color: var(--mygreen);
+}
+.right-btn {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+.right-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+}
+.right-btn button:hover {
+  color: var(--mygreen);
+}
+.right-btn button:nth-child(2) {
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.right-btn button:nth-child(2):hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.right-btn button:nth-child(2):active {
+  transform: translateY(-1px);
+}
+.hero-container {
+  padding: 0px 5rem 0px 5rem;
+  padding-top: 3rem;
+}
+.hero-items {
+  width: 70%;
+}
+.hero-items h1 {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  width: 500px;
+  position: relative;
+}
+.hero-items h1::before {
+  content: '"';
+  position: absolute;
+  left: -30px;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+}
+.hero-items h1::after {
+  content: '"';
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+}
+.hero-items h1 span {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+}
+.hero-items p {
+  opacity: calc(80%);
+  font-weight: 300;
+}
+.hero-items .line {
+  margin-top: 2rem;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  opacity: calc(70%);
+  display: block;
+}
+.second-items {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.second-items h4 {
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: calc(70%);
+}
+.second-items p {
+  font-weight: 400;
+}
+.login-card {
+  position: absolute;
+  padding: 10px 12px 0 12px;
+  width: 283px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  top: 7.5rem;
+  right: 5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.login-card div {
+  position: relative;
+}
+.login-card div:first-child {
+  margin-top: 2rem;
+}
+.login-card div input {
+  border: none;
+  border-bottom: solid 1.5px white;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  color: white;
+}
+.login-card div input:focus {
+  outline: none;
+  border-bottom: 1.5px solid var(--mygreen);
+}
+.login-card div label {
+  position: absolute;
+  left: 0px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: all ease-in-out 300ms;
+}
+.login-card div input:focus ~ label {
+  transform: translateY(-20%) scale(0.8);
+  padding: 0 0.2em;
+  color: var(--mygreen);
+}
+.login-card p{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: small;
+  width: 160px;
+  font-weight: 300;
+}
+.login-card p a{
+  font-weight: 400;
+  color: var(--mygreen);
+  transition: all ease-in-out 250ms;
+}
+.login-card p a:hover{
+  filter: brightness(5);
+}
+.login-card button{
+  margin-top: 2rem;
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.login-card button:hover{
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
