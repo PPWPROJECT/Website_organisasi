@@ -20,22 +20,22 @@
       <header class="header">
         <div class="header-div">
           <h1 class="logo">mapala</h1>
-          <ul class="menu-navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Galery</a></li>
-            <li><a href="#">Article</a></li>
+          <ul id="menu" class="menu-navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/admin.html">Admin</a></li>
+            <li><a href="./pages/news.html">News</a></li>
+            <li><a href="./pages/member.html">Member</a></li>
           </ul>
           <div class="right-btn">
             <button class="material-symbols-outlined">search</button>
-            <!-- <button class="material-symbols-outlined">account_circle</button> -->
-            <button>Join</button>
+            <button id="join-btn">Join</button>
+            <button id="profile-btn" href="">profile</button>
           </div>
         </div>
       </header>
       <div class="hero-container">
         <div class="hero-items">
-          <h1>mahasiwa <span>pecinta</span> alam</h1>
+          <h1>mahasiswa <span>pecinta</span> alam</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptatibus tenetur placeat illo repellat nulla commodi nesciunt magni ut necessitatibus.</p>
           <span class="line"></span>
           <div class="second-items">
@@ -54,18 +54,46 @@
           </div>
         </div>
       </div>
-      <div class="login-card">
+      <div id="login-card" class="login-card">
         <div>
-          <input type="text" >
+          <input id="email-login" required type="text" >
           <label for="">Email</label>
         </div>
         <div>
-          <input type="text" >
+          <input id="password-login" required type="text" >
           <label for="">Password</label>
         </div>
-        <p>Don't have an account <a href="#">Sign Up</a> Here.</p>
-        <button>Sign in</button>
+        <p>Don't have an account <span id="sign-switch">Sign Up</span> Here.</p>
+        <button id="login-btn">Sign in</button>
+      </div>
+      <div id="sign-up-card" class="sign-up-card">
+        <div>
+          <input id="email-sign-up" required type="text" >
+          <label for="">Email</label>
+        </div>
+        <div>
+          <input id="username-sign-up" required type="text" >
+          <label for="">Username</label>
+        </div>
+        <div>
+          <input id="university-sign-up" required type="text" >
+          <label for="">University</label>
+        </div>
+        <div>
+          <input id="password-sign-up" required type="text" >
+          <label for="">Password</label>
+        </div>
+        <p>Already have an account <span id="sign-switch">Sign in</span> Here.</p>
+        <button id="sign-up-btn">Sign up</button>
       </div>
     </section>
+    <div id="profile-card" class="profile-card">
+      <div class="image-wrapper">
+        <img src="./assets/man.png" alt="">
+      </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, fugit.</p>
+        <button>Log out</button>
+    </div>
+    <script src="./src/main.js"></script>
   </body>
 </html>
