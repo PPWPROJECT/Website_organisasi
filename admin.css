@@ -1,0 +1,164 @@
+:root {
+  --mygreen: #23c483;
+  --slate : #e2e8f0;
+}
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-color: var(--slate);
+}
+.menu-wrapper{
+  height: 200px;
+  width: 50px;
+  background-color: white;
+  border-radius: 15px;
+  position: fixed;
+  z-index: 99;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  gap: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-wrapper button{
+  outline: none;
+  background-color: var(--slate);
+  height: 50%;
+  border: none;
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+  color: var(--mygreen);
+}
+.menu-wrapper button:hover, .menu-wrapper button:focus{
+  background-color: white;
+}
+#all-admin{
+  width: 100%;
+  margin-left: auto;
+  display: none;
+  position: relative;
+}
+#all-admin h1{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+#all-admin-edit{
+  width: 100%;
+  display: none;
+  margin-left: auto;
+  position: relative;
+}
+#all-admin-edit h1{
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.container-all-admin{
+  background-color: transparent;
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 8rem;
+}
+.card{
+  width: 190px;
+  height: 274px;
+  background: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+}
+.image-card{
+  overflow: hidden;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.image-card img{
+  width: 160px;
+}
+.card span svg{
+  height: 20px;
+  fill: #64748b;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+}
+.card span svg:hover{
+  fill: var(--mygreen);
+}
+.card p{
+  margin-top: 1rem;
+}
+.social-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.list-edits{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.list-edits button{
+  padding: 1em 2em;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.list-edits button:nth-child(1){
+  background-color: var(--mygreen);
+}
+.list-edits button:nth-child(1):hover{
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.list-edits button:nth-child(1):active{
+  transform: translateY(-1px);
+}
+.list-edits button:nth-child(2){
+  background-color: #ef4444;
+}
+.list-edits button:nth-child(2):hover{
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.list-edits button:nth-child(2):active{
+  transform: translateY(-1px);
+}
