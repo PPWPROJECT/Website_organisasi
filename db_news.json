@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "63872bede53d4525f509d863"
+  },
+  "Foto": "",
+  "Judul Berita": " tes aje",
+  "Isi Berita": "kie kie",
+  "Tanggal Update": "01 Desembvber 2022"
+},{
+  "_id": {
+    "$oid": "63872cdee53d4525f509d864"
+  },
+  "Foto": "",
+  "Judul Berita": " tes aje",
+  "Isi Berita": "kie kie",
+  "Tanggal Update": "01 Desembvber 2022"
+},{
+  "_id": {
+    "$oid": "63872ce3e53d4525f509d865"
+  },
+  "Foto": "",
+  "Judul Berita": " tes aje",
+  "Isi Berita": "kie kie",
+  "Tanggal Update": "01 Desembvber 2022"
+},{
+  "_id": {
+    "$oid": "63872ce7e53d4525f509d866"
+  },
+  "Foto": "",
+  "Judul Berita": " tes aje",
+  "Isi Berita": "kie kie",
+  "Tanggal Update": "01 Desembvber 2022"
+}]

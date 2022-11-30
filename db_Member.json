@@ -1,0 +1,71 @@
+[{
+  "_id": {
+    "$oid": "6387292fe53d4525f509d85d"
+  },
+  "Foto": "-",
+  "Gender": "Perempuan",
+  "Nama": "Putri Maharani",
+  "Email": "21204001@unima.ac.id",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "@ptrimha._"
+},{
+  "_id": {
+    "$oid": "63872a65e53d4525f509d85e"
+  },
+  "Foto": "-",
+  "Gender": "Laki-Laki",
+  "Nama": "Peliks Andreas",
+  "Email": "-",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "63872af8e53d4525f509d861"
+  },
+  "Foto": "-",
+  "Gender": "Laki-Laki",
+  "Nama": "Asep Virgo",
+  "Email": "-",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "63872d47e53d4525f509d868"
+  },
+  "Foto": "-",
+  "Gender": "",
+  "Nama": "",
+  "Email": "-",
+  "Jabatan": "",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "63872d4de53d4525f509d869"
+  },
+  "Foto": "-",
+  "Gender": "",
+  "Nama": "",
+  "Email": "-",
+  "Jabatan": "",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "63872d53e53d4525f509d86a"
+  },
+  "Foto": "-",
+  "Gender": "",
+  "Nama": "",
+  "Email": "-",
+  "Jabatan": "",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "63872d5ae53d4525f509d86b"
+  },
+  "Foto": "-",
+  "Gender": "",
+  "Nama": "",
+  "Email": "-",
+  "Jabatan": "",
+  "Sosial Media": "-"
+}]

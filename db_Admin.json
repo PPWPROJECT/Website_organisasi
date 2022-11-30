@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "638724c8e53d4525f509d858"
+  },
+  "Foto": "-",
+  "Gender": "Perempuan",
+  "Nama": "Putri Maharani",
+  "Email": "21204001@unima.ac.id",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "@ptrimha._"
+},{
+  "_id": {
+    "$oid": "63872679e53d4525f509d859"
+  },
+  "Foto": "-",
+  "Gender": "Laki-Laki",
+  "Nama": "Peliks Andreas",
+  "Email": "-",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "-"
+},{
+  "_id": {
+    "$oid": "638727afe53d4525f509d85a"
+  },
+  "Foto": "-",
+  "Gender": "Laki-Laki",
+  "Nama": "Asep Virgo",
+  "Email": "-",
+  "Jabatan": "Publikasi & Dokumentasi",
+  "Sosial Media": "-"
+}]
