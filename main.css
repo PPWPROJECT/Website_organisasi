@@ -30,13 +30,17 @@
 .logo {
   font-weight: 900;
   font-size: 2.3rem;
+  text-transform: capitalize;
   color: var(--mygreen);
 }
 .menu-navbar {
-  display: flex;
+  display: none;
   text-decoration: none;
   gap: 3rem;
   list-style: none;
+}
+.menu-navbar-active {
+  display: flex;
 }
 .menu-navbar li a {
   text-decoration: none;
@@ -59,7 +63,8 @@
 .right-btn button:hover {
   color: var(--mygreen);
 }
-.right-btn button:nth-child(2) {
+#join-btn {
+  display: block;
   padding: 1em 2em;
   font-size: 12px;
   text-transform: uppercase;
@@ -74,13 +79,39 @@
   cursor: pointer;
   outline: none;
 }
-.right-btn button:nth-child(2):hover {
+#join-btn:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
-.right-btn button:nth-child(2):active {
+#join-btn:active {
+  transform: translateY(-1px);
+}
+#profile-btn {
+  display: none;
+  text-decoration: none;
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+#profile-btn:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+#profile-btn:active {
   transform: translateY(-1px);
 }
 .hero-container {
@@ -151,10 +182,13 @@
   border-radius: 0.7rem;
   top: 7.5rem;
   right: 5rem;
-  display: flex;
+  display: none;
   gap: 1rem;
   flex-direction: column;
   align-items: center;
+}
+.login-card-active {
+  display: flex;
 }
 .login-card div {
   position: relative;
@@ -183,27 +217,30 @@
   transform: translateY(1rem);
   transition: all ease-in-out 300ms;
 }
-.login-card div input:focus ~ label {
+.login-card div input:focus ~ label,
+.login-card div input:valid ~ label {
   transform: translateY(-20%) scale(0.8);
   padding: 0 0.2em;
   color: var(--mygreen);
 }
-.login-card p{
+.login-card p {
   text-align: center;
   margin-top: 1rem;
   font-size: small;
   width: 160px;
   font-weight: 300;
 }
-.login-card p a{
+.login-card p span {
   font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
   color: var(--mygreen);
   transition: all ease-in-out 250ms;
 }
-.login-card p a:hover{
+.login-card p span:hover {
   filter: brightness(5);
 }
-.login-card button{
+.login-card button {
   margin-top: 2rem;
   padding: 1em 2em;
   font-size: 12px;
@@ -219,9 +256,168 @@
   cursor: pointer;
   outline: none;
 }
-.login-card button:hover{
+.login-card button:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+.login-card button:active {
+  transform: translateY(-1px);
+}
+/* sign up  */
+.sign-up-card {
+  position: absolute;
+  padding: 10px 12px 0 12px;
+  width: 283px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 0.7rem;
+  top: 7.5rem;
+  right: 5rem;
+  display: none;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-up-card-active {
+  display: flex;
+}
+.sign-up-card div {
+  position: relative;
+}
+.sign-up-card div:first-child {
+  margin-top: 1rem;
+}
+.sign-up-card div input {
+  border: none;
+  border-bottom: solid 1.5px white;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  color: white;
+}
+.sign-up-card div input:focus {
+  outline: none;
+  border-bottom: 1.5px solid var(--mygreen);
+}
+.sign-up-card div label {
+  position: absolute;
+  left: 0px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: all ease-in-out 300ms;
+}
+.sign-up-card div input:focus ~ label,
+.sign-up-card div input:valid ~ label {
+  transform: translateY(-20%) scale(0.8);
+  padding: 0 0.2em;
+  color: var(--mygreen);
+}
+.sign-up-card p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: small;
+  width: 160px;
+  font-weight: 300;
+}
+.sign-up-card p span {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--mygreen);
+  transition: all ease-in-out 250ms;
+}
+.sign-up-card p span:hover {
+  filter: brightness(5);
+}
+.sign-up-card button {
+  margin-top: 2rem;
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.sign-up-card button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.sign-up-card button:active {
+  transform: translateY(-1px);
+}
+.profile-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 4.5rem;
+  right: 5rem;
+  height: 400px;
+  width: 250px;
+  z-index: 99;
+  padding: 1em 2em;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+  background-color: var(--mygreen);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+.profile-card-active {
+  display: flex;
+}
+.image-wrapper {
+  border: 7px solid white;
+  border-radius: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 200px;
+}
+.profile-card p {
+  text-align: center;
+  margin-top: 20px;
+}
+.profile-card button {
+  margin-top: 2rem;
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.profile-card button:hover {
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateY(-7px);
+}
+.profile-card button:active {
+  transform: translateY(-1px);
 }
